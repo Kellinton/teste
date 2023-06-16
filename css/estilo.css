@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header{
+    height: 100vh;
+}
+section{
+    margin-bottom: 100px;
+}
+body{
+   background-color: #FFFCF9;
+  
+}
+
+/*colocar transform no main*/
+.site{
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*topo banner*/
+.topo-corpo{
+    background-image: url(../img/bannertom.jpg); 
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+/*topo menu*/
+.topo-corpo div:nth-child(1) nav{
+    display: flex;
+
+}
+.topo-corpo div:nth-child(1){
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topo-corpo div:nth-child(1) ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 80px 0px 80px
+}
+
+.topo-corpo div:nth-child(1) ul a{
+    position: relative;
+    text-decoration: none;
+    padding: 35px;
+    font-size: 1.3rem;
+    color: #FFFCF9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+/*hover menu*/
+
+
+ 
+ .topo-corpo div:nth-child(1) ul a:after{
+     content: "";
+     position: absolute;
+     background-color: red;
+     height: 5px;
+     width: 0;
+     left: 0;
+     top: 70px;
+     margin: 0;
+     padding: 0;
+     transition: 0.3s;
+ }
+ 
+ .topo-corpo div:nth-child(1) ul a:hover:after{
+     width: 100%;
+ }
+ 
+/*logo*/
+.topo-corpo div:nth-child(1) h1{
+    padding: 35px;
+    font-size: 2rem;
+    color: #FFFCF9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+.topo-corpo div:nth-child(1) span{
+    color: red;
+    font-size: 3rem;
+}
+
+
+/*topo botao,slogan*/
+.topo-corpo div:nth-of-type(2){
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform:translateY(200px);
+}
+
+.topo-corpo div:nth-of-type(2) p, span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 7.0rem;
+    color: red;
+}
+.digitando-efeito {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 7.0rem;
+    color: #FFFCF9;
+    text-transform: capitalize;
+}
+.topo-corpo strong{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: #FFFCF9;
+    padding: 25px;  
+    flex-grow: 1; 
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+.topo-corpo div:nth-of-type(2) a{
+    background-color: none;
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+    width: 12%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;  
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    color: white;
+    padding: 15px;   
+    border-radius: 50px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: all .10s ease-in-out;
+    
+}
+.topo-corpo div:nth-of-type(2) a:hover{
+    background-color: none;
+    border: solid 4px red;
+    color: white;
+
+}
